@@ -24,102 +24,6 @@
 
 - React思維：聲明式、單向資料流、不會修改dom元素、而是修改資料，讓react更新視覺元素
 
-### 三大框架比較
-
-- Angular
-  
-  - Google 2010
-  
-  - MVVM  
-  
-  - 優點：
-    
-    - 完整的教學文件
-    
-    - 強大的解決方案
-    
-    - 雙向綁定
-    
-    - 依賴注入
-  
-  - 缺點：
-    
-    - 要花很多時間去學習
-    
-    - 語法複雜(typescript)
-    
-    - 版本變動大
-
-- Vue
-  
-  - 尤雨溪
-  
-  - Vue 2
-  
-  - MVVM
-  
-  - 優點：
-    
-    - 完整多國語言教學文件
-    
-    - 集各家特色
-    
-    - 容易整合
-    
-    - 輕量
-  
-  - 缺點：
-    
-    - 生態還不夠全面
-
-- React
-  
-  - Facebook 2013
-  
-  - React 16
-  
-  - Virtual DOM
-  
-  - MVC 當中的 V
-  
-  - 優點：
-    
-    - 簡單好學
-    
-    - 運用靈活
-    
-    - 單向資料流
-    
-    - Virtual DOM技術
-    
-    - 升級工具
-  
-  - 缺點：
-    
-    - 沒有React百科（缺少好的文件）
-    
-    - 太過靈活
-    
-    - JS知識需求高
-
-- Virtual DOM 介紹
-  
-  - Virtual DOM是在component render function與DOM之間，virtual dom在每次資料異動時，都會被全部重新render，在跟實際的DOM互相比較，比較後更新Real DOM差異處
-  
-  - 優點：
-    
-    - 初始Render快
-    
-    - 大量更新快
-    
-    - 容易實作dom以外的render(React Native)
-
-- MVVM
-  
-  - 小量更新快
-  
-  - 要做優化，大量更新才快
-
 ### ES6簡介
 
 Scope:作用域，只有分function scope 與 global scope而已
@@ -132,14 +36,26 @@ bloack:區塊( {} 裡面的都是區塊 )
 
 - let/const:block
 
-箭頭函式
+- 
+
+**箭頭函式**
 
 this的用法簡稱**它在哪個物件下被呼叫**
 
+**import , export語法**
+
+**解構函式**
 
 
 
+### JSX 簡介
 
+1. 每個tag都需要close ( /> )
 
+2. jsx 所有的物件都可以self closing </> , close tag = <div></div>
 
+3. class避免與js撞名改用className , for 也改名為htmlFor
 
+4. html 可以都小寫 , jsx method 都要用駝峰式命名onClick
+
+5. jsx 可以用大括號{}來表達一個值或是一個表達式

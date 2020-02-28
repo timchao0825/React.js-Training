@@ -84,3 +84,44 @@ import math , {a1 , b1} from './math.js';
 // 也可以重新命名(只有name export 可以用)
 import math , {a1 as aaa, b1 as bbb} from './math.js';
 console.log(aaa, bbbb);
+
+// older Array
+
+const point = [1, 2, 3]; // array
+
+const x = point[0];
+
+const y = point[0];
+
+const z = point[0];
+
+// New es6
+
+const [x, y, z] = point;
+
+// older object
+
+const point = {x:1, y:2,z:3}
+
+const x = point.x;
+
+const y = point.y;
+
+const z = point.z;
+
+// New es6
+
+const {x, y, z} = point;
+
+也可以直接解開
+
+const draw = ({ x, y, z}) => { ....... };
+
+const circleArea = radius => radius * radius * Math.PI;
+
+const visitMessage = ({age , name}) => {
+ if(age < 18){
+ return `Dear ${name}, you are under age`;
+ }
+ return `Welcom ${name} !`;
+}

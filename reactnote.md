@@ -24,6 +24,10 @@
 
 - React思維：聲明式、單向資料流、不會修改dom元素、而是修改資料，讓react更新視覺元素
 
+- React 寫法排序以state > 生命週期 > 自訂函式 > render 來做順序較好（規矩寫法）
+
+### 
+
 ### ES6簡介
 
 Scope:作用域，只有分function scope 與 global scope而已
@@ -46,8 +50,6 @@ this的用法簡稱**它在哪個物件下被呼叫**
 
 **解構函式**
 
-
-
 ### JSX 簡介
 
 1. 每個tag都需要close ( /> )
@@ -59,3 +61,17 @@ this的用法簡稱**它在哪個物件下被呼叫**
 4. html 可以都小寫 , jsx method 都要用駝峰式命名onClick
 
 5. jsx 可以用大括號{}來表達一個值或是一個表達式
+
+#### 組件裡面有什麼
+
+### JS 函式方法
+
+bind 
+
+### React 函式
+
+setState ：React組建的內建函式，用於更新狀態
+
+自訂函式的function (){}的這種寫法，function 內不會回傳this的組件內容
+
+用箭頭函式，或用constructor(props){}方法

@@ -26,7 +26,25 @@
 
 - React 寫法排序以state > 生命週期 > 自訂函式 > render 來做順序較好（規矩寫法）
 
-### 
+### Vue 與 React 比較
+
+React
+
+- render function 規則少，JSX幾乎沒有自訂規則  
+- 變數和自訂函式在哪裡很清楚  
+- 改變資料：傳入新的物件，改變舊狀態  
+- redux, alt, reflux, context api 不同作者寫的，選擇多
+
+Vue
+
+- 模板語法規則多  
+- template 裡的變數短  
+- 優點，vue 會自動到 script 裡找變數，簡短快速  
+- 缺點，光看程式碼不確定目標在哪  
+- 要學 template、scrip 的規則  
+- 
+- 改變資料的思維：直接改變變數的值  
+- 一條龍的 library，vue, vue router, vuex 同一個作者寫出來的
 
 ### ES6簡介
 

@@ -1,15 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-// import List from './list';
+// basic component
+// import List from './basiccomponent/List';
 // ReactDOM.render(<List/> , document.getElementById('root'));
 
-// import Message from './Message'
+// basic state application
+// import Message from './setstate/Message'
 // ReactDOM.render(<Message/> , document.getElementById('root'));
 
-// import Parent from './parent.js'
+// Parent child component
+// import Parent from './parentchild/Parent.js'
 // ReactDOM.render(<Parent/> , document.getElementById('root'));
 
+// Class State
+// import Imagestate from './imgstate/Imagestate.js'
+// ReactDOM.render(<Imagestate/> , document.getElementById('root'));
 
-import Imagestate from './imagestate.js'
-ReactDOM.render(<Imagestate/> , document.getElementById('root'));
+// Component , Functional Component , Pure Component
+// import Progress from './progressbar/Progress.js'
+// ReactDOM.render(<Progress/> , document.getElementById('root'));
+
+// info card
+// import Infocard from './infocard/InfocardApp.js'
+// ReactDOM.render(<Infocard/> , document.getElementById('root'));
+
+// react style 
+import Reactstyle from './reactstyle/Reactstyle.js'
+ReactDOM.render(<Reactstyle/> , document.getElementById('root'));

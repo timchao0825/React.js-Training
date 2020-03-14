@@ -1,5 +1,5 @@
 import React , {Component  , createRef} from 'react';
-import Child from './child.js';
+import Child from './Child.js';
 
 class Parent extends Component {
   childRef = createRef();

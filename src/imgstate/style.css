@@ -1,0 +1,25 @@
+
+.redborder{
+  border:2px solid red;
+}
+.show{
+  display: block;
+}
+.hide{
+  display: none;
+}
+.bar-outer{
+  position: relative;
+  border:1px solid red;
+  height: 30px;
+}
+.bar-inner{
+  background-color:#ccc;
+  height: 100%;
+}
+.percentage{
+  position: absolute;
+  top:50%;
+  left:15px;
+  transform: translateY(-50%);
+}

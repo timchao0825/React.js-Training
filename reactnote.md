@@ -93,3 +93,11 @@ setState ：React組建的內建函式，用於更新狀態
 自訂函式的function (){}的這種寫法，function 內不會回傳this的組件內容
 
 用箭頭函式，或用constructor(props){}方法
+
+
+
+### HOC(進階高階組件)
+
+Higher-Order Components（HOC）通常是一個函數，可代入元件（Component）作為參數，並回傳一個新的元件。使用 HOC ，的目的是將通用的邏輯放在 HOC 中，變動的部分就由代入 Component 的 props 和 state 傳入即可。
+
+

@@ -13,6 +13,10 @@ import ReactDOM from 'react-dom';
 // import Parent from './parentchild/Parent.js'
 // ReactDOM.render(<Parent/> , document.getElementById('root'));
 
+// ref 範例檔案
+// import Input from './counter/ref-attr';
+// ReactDOM.render(<Input/> , document.getElementById('root'));
+
 // Class State
 // import Imagestate from './imgstate/Imagestate.js'
 // ReactDOM.render(<Imagestate/> , document.getElementById('root'));
@@ -26,5 +30,9 @@ import ReactDOM from 'react-dom';
 // ReactDOM.render(<Infocard/> , document.getElementById('root'));
 
 // react style 
-import Reactstyle from './reactstyle/Reactstyle.js'
-ReactDOM.render(<Reactstyle/> , document.getElementById('root'));
+// import Reactstyle from './reactstyle/Reactstyle.js'
+// ReactDOM.render(<Reactstyle/> , document.getElementById('root'));
+
+// hoc training
+import Block from './opencard/Block.js'
+ReactDOM.render(<Block /> , document.getElementById('root'));

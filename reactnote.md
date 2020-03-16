@@ -94,10 +94,20 @@ setState ：React組建的內建函式，用於更新狀態
 
 用箭頭函式，或用constructor(props){}方法
 
-
-
 ### HOC(進階高階組件)
 
 Higher-Order Components（HOC）通常是一個函數，可代入元件（Component）作為參數，並回傳一個新的元件。使用 HOC ，的目的是將通用的邏輯放在 HOC 中，變動的部分就由代入 Component 的 props 和 state 傳入即可。
 
+### React Key 屬性
 
+陣列元素渲染時+key屬性的目的：讓每個渲染出來的component都能夠認得『 自己與資料 』的連結
+
+key必須是unique的 (parent以內皆可，例如：不同div內，即使重複了也不會影響彼此) 
+
+加上key，則react就會知道每個元素和資料對應，只要資料沒變就不會重新渲染。
+
+不用index當做key (只能避掉warnning，不能避免效能的耗損)...！！例如刪除元素後每個
+
+素對應的indexKey都會改變，則每次還是會重新渲染！！
+
+理想的狀況下是請後端傳送足以讓你當做key的資料！

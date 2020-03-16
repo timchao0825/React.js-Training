@@ -34,5 +34,9 @@ import ReactDOM from 'react-dom';
 // ReactDOM.render(<Reactstyle/> , document.getElementById('root'));
 
 // hoc training
-import Block from './opencard/Block.js'
-ReactDOM.render(<Block /> , document.getElementById('root'));
+// import Block from './opencard/Block.js'
+// ReactDOM.render(<Block /> , document.getElementById('root'));
+
+// list render
+import List from './listrender/List.js'
+ReactDOM.render(<List /> , document.getElementById('root'));

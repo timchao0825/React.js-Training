@@ -1,0 +1,9 @@
+.folder{
+  color:blue;
+}
+.folder:before{
+  content:'📁'
+}
+.folder.open:before{
+  content:'📂';
+}

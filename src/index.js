@@ -42,7 +42,9 @@ import ReactDOM from 'react-dom';
 // ReactDOM.render(<List /> , document.getElementById('root'));
 
 // file tree
-import App from './filetree/App.js'
+// import App from './filetree/App.js'
+// ReactDOM.render(<App /> , document.getElementById('root'));
+
+// form 
+import App from './form/App.js';
 ReactDOM.render(<App /> , document.getElementById('root'));
-
-

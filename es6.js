@@ -113,9 +113,9 @@ const z = point.z;
 
 const {x, y, z} = point;
 
-也可以直接解開
+// 也可以直接解開
 
-const draw = ({ x, y, z}) => { ....... };
+// const draw = ({ x, y, z}) => { ....... };
 
 const circleArea = radius => radius * radius * Math.PI;
 

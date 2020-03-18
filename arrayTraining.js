@@ -2,7 +2,7 @@ const array = [1,2,3];
 
 // map
 // return to array 2 , 4 , 6
-const result = array.map(function(elem , idx , array){
+const result = array.map(function(elem , idx , arr){
   return elem * 2;
 // return <li>{elem * 2}</li>;
 });
@@ -85,3 +85,59 @@ console.log(months);
 const newArr = array.slice(); // 複製一個新的array
 // ES6 複製方法
 const newArr = [...array];
+
+
+const students = [
+  {
+    name: 'Abby',
+    age: 17,
+    gender: 'female',
+  },
+  {
+    name: 'Betty',
+    age: 18,
+    gender: 'female',
+  },
+  {
+    name: 'Charlie',
+    age: 16,
+    gender: 'male',
+  },
+  {
+    name: 'David',
+    age: 19,
+    gender: 'male',
+  },
+  {
+    name: 'Emily',
+    age: 18,
+    gender: 'female',
+  },
+];
+var newStudents = students.slice();
+var studentsName = newStudents.map(function(item , idx, array){
+  return item.name;
+})
+// console.log(studentsName);
+
+var studentsTitle = newStudents.map(function(item , idx , array){
+  var newName;
+  if(item.gender == 'male'){
+    newName = 'Mr ' + item.name;
+  }else{
+    newName = 'Miss ' + item.name;
+  }
+  return newName;
+});
+// console.log(studentsTitle);
+
+var overAge = newStudents.filter(function(item , idx , array){
+  return item.age >= 18;
+});
+// console.log(overAge);
+
+var totalAge = newStudents.reduce(
+  function(acc,val,idx,array){
+  return (acc + val.age)
+  }, 0 );
+console.log( totalAge / (newStudents.length) );

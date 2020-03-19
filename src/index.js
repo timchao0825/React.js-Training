@@ -46,5 +46,6 @@ import ReactDOM from 'react-dom';
 // ReactDOM.render(<App /> , document.getElementById('root'));
 
 // form 
-import App from './form/App.js';
-ReactDOM.render(<App /> , document.getElementById('root'));
+// import AppSelect from './form/AppSelect.js';
+import AppRadio from './form/AppRadio.js';
+ReactDOM.render(<AppRadio /> , document.getElementById('root'));

@@ -47,5 +47,9 @@ import ReactDOM from 'react-dom';
 
 // form 
 // import AppSelect from './form/AppSelect.js';
-import AppRadio from './form/AppRadio.js';
-ReactDOM.render(<AppRadio /> , document.getElementById('root'));
+// import AppRadio from './form/AppRadio.js';
+// import AppCheckbox from './form/AppCheckbox.js'
+// import AppImage from './form/AppImage.js';
+import AppSalaryCounter from './form/AppSalaryCounter.js';
+ReactDOM.render(<AppSalaryCounter /> , document.getElementById('root'));
+

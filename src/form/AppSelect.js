@@ -13,25 +13,41 @@ class AppSelect extends Component {
   state = {
     text:`${relation[0].value}`,
   }
-  onChangeSelect = function(elem){
+  // onChangeSelect = function(elem){
+  //   this.setState({
+  //     text:elem.target.value,
+  //   })
+  // }
+  onChangeSelect = (elem) => {
     this.setState({
-      text:elem.target.value,
-    })
-  }
+      text:elem.target.value
+    });
+  };
   render() {
     const {text} = this.state;
     return (
       <div>
-        <select value={text} onChange={this.onChangeSelect.bind(this)}>
-          {relation.map(function(item,idx,array){
+        <h2>App Select</h2><br/>
+        <select value={text} onChange={this.onChangeSelect}>
+          {/* {relation.map(function(item,idx,array){
             return <option key={item.label} value={item.value}>{item.label}</option>;
-          })}
+          })} */}
+          {
+            relation.map( (item , idx , array) => {
+              return <option key={item.label} value={item.value}>{item.label}</option>;
+            } )
+          }
         </select>
         <h1>
-          {
+          {/* {
           relation.find(function(item , idx , array){
             return `${item.value}` === text;
           }).label
+          } */}
+          {
+            relation.find((item , idx , array)=>{
+              return `${item.value}` === text;
+            }).label
           }
         </h1>
       </div>

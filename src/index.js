@@ -50,6 +50,11 @@ import ReactDOM from 'react-dom';
 // import AppRadio from './form/AppRadio.js';
 // import AppCheckbox from './form/AppCheckbox.js'
 // import AppImage from './form/AppImage.js';
-import AppSalaryCounter from './form/AppSalaryCounter.js';
-ReactDOM.render(<AppSalaryCounter /> , document.getElementById('root'));
+// import AppSalaryCounter from './form/AppSalaryCounter.js';
+// import AppSalaryCounterAd from './form/AppSalaryCounterAd.js';
+// import AppChatRoom from './form/AppChatRoom.js';
+// ReactDOM.render(<AppChatRoom /> , document.getElementById('root'));
+
+// lifecycle 
+// reference website:http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
 

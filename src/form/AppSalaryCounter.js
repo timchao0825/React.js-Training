@@ -55,13 +55,13 @@ class AppSalaryCounter extends Component {
         />
         <br />
         <label>時薪</label>
-        <input type="number" disabled value={month / 240} />
+        <input type="number" readOnly value={month / 240} />
         <br />
         <label>分薪</label>
-        <input type="number" disabled value={month / 240 / 60} />
+        <input type="number" readOnly value={month / 240 / 60} />
         <br />
         <label>秒薪</label>
-        <input type="number" disabled value={month / 240 / 60 / 60} />
+        <input type="number" readOnly value={month / 240 / 60 / 60} />
         <br />
         <label>經過時間</label>
         <div>

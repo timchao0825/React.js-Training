@@ -111,3 +111,22 @@ key必須是unique的 (parent以內皆可，例如：不同div內，即使重複
 素對應的indexKey都會改變，則每次還是會重新渲染！！
 
 理想的狀況下是請後端傳送足以讓你當做key的資料！
+
+### 生命週期
+
+> 圖片網站參考：http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+
+React的主要作用：定義資料 > render 成視覺 > 資料變更時一定更新視覺元素
+
+常用的生命週期階段 
+
+> Render階段
+> Commit階段
+
+透過ajax更新資料和繪製canvas等有副作用的動作，應該放在commit階段執行，而非render階段執行
+
+
+
+
+
+

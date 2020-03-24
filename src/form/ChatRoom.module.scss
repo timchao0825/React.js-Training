@@ -1,0 +1,43 @@
+body , div{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.colorRed{
+  color:red;
+}
+.chatForm{
+  width: 50%;
+  min-height: 300px;
+}
+input{
+  box-sizing: border-box;
+  height: 35px;
+  padding:0px 10px;
+  margin:5px 0px 5px 5px;
+}
+.submit{
+  height: 35px;
+  border:none;
+  width: 50px;
+  background-color:#007e69;
+  color:#fff;
+}
+.message{
+  list-style: none;
+  margin:0;
+  margin-top: 10px;
+  padding-left:20px;
+  li{
+    &:before{
+      content:'❯';
+      display: inline-block;
+      margin-right: 10px;
+    }
+    margin-bottom: 10px;
+  }
+}

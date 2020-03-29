@@ -58,3 +58,7 @@ import ReactDOM from 'react-dom';
 // lifecycle 
 // reference website:http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
 
+
+// scroll class
+import App from './scrollclass/App.js';
+ReactDOM.render(<App /> , document.getElementById('root'));

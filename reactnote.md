@@ -173,4 +173,96 @@ render裡面不應該做的事：setState(絕對不行)，AJAX呼叫，fetch，a
 
 一般用於，將綁定的 EventListener, setTimeout 或是 Ajax 等等不再需要的行為移除 ( removeEventListener, clearTimeout ...等 )
 
+> ### 較不常用的生命週期函式
 
+#### getDerivedStateFromProps（發生在組件剛掛載的時候執行，更新的時候也會執行，render之前）
+
+1.是一個靜態的函式，不會有this可以用
+2.發生在組件剛掛載的時候執行，更新的時候也會執行
+3.吃兩個參數Prop跟State
+4.return 新的state
+5.可以用來做復原功能
+6.但可以用很多方式來取代，多元件頁面時的效能比較好
+7.不能接受非同步運作
+
+#### shouldComponentUpdate（組件更新時，用於比較props變更判斷是否要更新組件）
+
+1.控制組件要不要更新的時候使用shouldComponentUpdate生命週期函式，使用Props跟State參數
+
+2.預設會return true，如果return false，就不會在跑render、componentDidMount....等
+
+3.例如:上層組件會一直傳入ms給下層組件，只有上一個秒數跟下一個秒數不相等的時候才更新，可以改善render的效能。
+
+4.PureComponent 內建shouldComponentUpdate
+
+#### getSnapshotBeforeUpdate（常用於記錄非state的dom狀態，發生於更新組件之前）
+
+```
+class Log extends Component{
+    getSnapshotBeforeUpdate(prevProps, prevState){
+        if(prevProps.item.length !== this.props.items.length){
+            const list = this.ref-current;
+            return list.scrollHeight - list.scrollTop;
+        }
+        return null;
+    }
+    componentDidUpdate(prevProps, prevState , snapshot){
+        if(snapshot){
+            const list = this.ref.current;
+            list.scrollTop = list.scrollHeight - snapshot;
+        }        
+    }
+}
+export default Log;
+```
+
+#### React 16 - Render 更加靈活
+
+React16之前：render只能回傳jsx，且最外層必須用個元素包裝起來
+
+- 可以回傳jsx陣列或fragment等東西而不再有所限制
+
+```
+import React , {Component , Fragment} from 'react';
+class MyComponent extends Component {
+  render(){
+     return [
+         <div></div>,
+         <span></span>,
+         <ul></ul>,
+     ]
+     // return (
+     //    <Fragment>
+     //        <div></div>,
+     //        <span></span>,
+     //        <ul></ul>,
+     //    </Fragment>
+     // )
+        
+  }
+}
+export default MyComponent;
+```
+
+- Fragment的好處在於可以略過那些只吃一個節點的工具，例如ReactRouter中Router裡面只可以裝Single Element
+
+- 可以回傳string 或 number
+
+- 可以回傳boolean 或 null
+
+React Fragment
+
+https://reactjs.org/docs/react-api.html#fragments
+
+#### React 錯誤處理
+
+```
+state = {
+    hasError : false,
+}
+static getDerivedStateFromError(error){
+    return {hasError:true};
+}
+```
+
+https://zh-hant.reactjs.org/docs/error-boundaries.html

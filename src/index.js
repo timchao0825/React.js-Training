@@ -60,5 +60,14 @@ import ReactDOM from 'react-dom';
 
 
 // scroll class
-import App from './scrollclass/App.js';
+// import App from './scrollclass/App.js';
+// ReactDOM.render(<App /> , document.getElementById('root'));
+
+// error handle
+// reference : https://zh-hant.reactjs.org/docs/error-boundaries.html
+// import App from './errorhandle/App.js';
+// ReactDOM.render(<App /> , document.getElementById('root'));
+
+// Portal
+import App from './portal/App.js';
 ReactDOM.render(<App /> , document.getElementById('root'));

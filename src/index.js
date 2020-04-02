@@ -69,5 +69,9 @@ import ReactDOM from 'react-dom';
 // ReactDOM.render(<App /> , document.getElementById('root'));
 
 // Portal
-import App from './portal/App.js';
+// import App from './portal/App.js';
+// ReactDOM.render(<App /> , document.getElementById('root'));
+
+// Context
+import App from './context/App.js';
 ReactDOM.render(<App /> , document.getElementById('root'));

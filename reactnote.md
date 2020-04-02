@@ -266,3 +266,19 @@ static getDerivedStateFromError(error){
 ```
 
 https://zh-hant.reactjs.org/docs/error-boundaries.html
+
+#### Context API
+
+react 16之後開發出一個createContext可以達到redux類似功能
+
+使用Context要內建兩個組件
+1.Provider 
+2.Consumer
+
+> 原因
+
+state讓資料傳遞和視覺結構綁太緊，造成太多不必要的麻煩，尤其在結構很深的時候需要一直往下傳遞
+
+很多時候對資料傳遞過程中的中間層來說，這些資料對他們來說毫無意義，他們只是負責把資料傳下去
+
+因此，我們需要一個跨Component的資料傳遞方式，redux或者新的context API

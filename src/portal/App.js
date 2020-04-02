@@ -6,9 +6,16 @@ class App extends Component {
     detailVisible: false,
   }
   showMore = () => {
-    this.setState({
-      detailVisible:true,
-    })
+    if(this.state.detailVisible){
+      this.setState({
+        detailVisible:false,
+      })
+    }else{
+      this.setState({
+        detailVisible:true,
+      })
+    }
+    
   }
   render() {
     const {detailVisible} = this.state;

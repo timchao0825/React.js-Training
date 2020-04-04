@@ -73,5 +73,12 @@ import ReactDOM from 'react-dom';
 // ReactDOM.render(<App /> , document.getElementById('root'));
 
 // Context
-import App from './context/App.js';
+// import App from './context/App.js';
+// ReactDOM.render(<App /> , document.getElementById('root'));
+
+
+// Application Practice
+
+// 1.filter lessions
+import App from './filter-lesson/App.js';
 ReactDOM.render(<App /> , document.getElementById('root'));

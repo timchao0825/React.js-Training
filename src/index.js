@@ -80,5 +80,9 @@ import ReactDOM from 'react-dom';
 // Application Practice
 
 // 1.filter lessions
-import App from './filter-lesson/App.js';
+// import App from './filter-lesson/App.js';
+// ReactDOM.render(<App /> , document.getElementById('root'));
+
+// 2. tic-tac-toe
+import App from './tic-tac-toe/App.js';
 ReactDOM.render(<App /> , document.getElementById('root'));

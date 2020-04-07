@@ -84,5 +84,9 @@ import ReactDOM from 'react-dom';
 // ReactDOM.render(<App /> , document.getElementById('root'));
 
 // 2. tic-tac-toe
-import App from './tic-tac-toe/App.js';
+// import App from './tic-tac-toe/App.js';
+// ReactDOM.render(<App /> , document.getElementById('root'));
+
+//3. Context Pop up
+import App from './context-popup/App.js';
 ReactDOM.render(<App /> , document.getElementById('root'));

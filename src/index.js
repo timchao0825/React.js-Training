@@ -88,5 +88,20 @@ import ReactDOM from 'react-dom';
 // ReactDOM.render(<App /> , document.getElementById('root'));
 
 //3. Context Pop up
-import App from './context-popup/App.js';
+// import App from './context-popup/App.js';
+// ReactDOM.render(<App /> , document.getElementById('root'));
+
+
+// React Hooks
+
+// >useState
+// import UseState from './reacthooks/UseState.js';
+// ReactDOM.render(<UseState /> , document.getElementById('root'));
+
+// >useEffect
+// import FetchUseEffect from './reacthooks/FetchUseEffect.js';
+// ReactDOM.render(<FetchUseEffect /> , document.getElementById('root'));
+
+// >useContext
+import App from './reacthooks/useContext/App';
 ReactDOM.render(<App /> , document.getElementById('root'));

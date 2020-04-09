@@ -91,9 +91,16 @@ import ReactDOM from 'react-dom';
 // import App from './context-popup/App.js';
 // ReactDOM.render(<App /> , document.getElementById('root'));
 
+//4. Todo List Hooks
+// import App from './todolistHooks/App.js';
+// ReactDOM.render(<App /> , document.getElementById('root'));
+
+//5. Cookie Clicker
+// import App from './cookie-clicker/App';
+// ReactDOM.render(<App /> , document.getElementById('root'));
+
 
 // React Hooks
-
 // >useState
 // import UseState from './reacthooks/UseState.js';
 // ReactDOM.render(<UseState /> , document.getElementById('root'));
@@ -103,5 +110,11 @@ import ReactDOM from 'react-dom';
 // ReactDOM.render(<FetchUseEffect /> , document.getElementById('root'));
 
 // >useContext
-import App from './reacthooks/useContext/App';
+// import App from './reacthooks/useContext/App';
+// ReactDOM.render(<App /> , document.getElementById('root'));
+
+
+
+// React Rounter test
+import App from './react-router/App';
 ReactDOM.render(<App /> , document.getElementById('root'));

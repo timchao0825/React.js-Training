@@ -161,7 +161,7 @@ render裡面不應該做的事：setState(絕對不行)，AJAX呼叫，fetch，a
 2.可以setState
 3.可以使用this.ref
 
-#### ComponentDidMount（組件更新函式）
+#### ComponentDidUpdate（組件更新函式）
 
 只要state和props有變，就會觸發componentDidUpdate()
 
@@ -302,3 +302,15 @@ functional component 可以實作state跟custom method，class也變非必要
 ##### useState
 
 在useState回傳的setState中，傳入的東西『 不能 』是partial state，需要是一個完整的state
+
+##### useEffect
+
+useEffect()可以傳入兩個參數，第一個參數是每次render都執行的function，第二個參數是陣列，每次都會比對陣列內容，若有不相同才執行第一個參數的function
+
+useEffect()如何取代componentWillUnmount()?
+
+useEffect()會做四件事情：
+1.如果傳入的第二個參數陣列，陣列內容不一樣才會繼續執行
+2.執行上一次存下來的清理函式(return)
+3.執行useEffect()裡面的內容(useEffect 裡面的執行內容)
+4.把return裡面的清理函式存下來以便下次使用

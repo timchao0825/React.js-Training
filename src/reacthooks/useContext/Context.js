@@ -1,3 +1,5 @@
 import {createContext} from 'react';
 
-export const {Provider , Consumer} = createContext({});
+const context = createContext({})
+export const {Provider , Consumer} = context;
+export default context;

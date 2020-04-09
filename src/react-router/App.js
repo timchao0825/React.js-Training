@@ -9,7 +9,11 @@ import About from './About';
 import News from './News';
 import Home from './Home';
 class App extends Component {
+  state = {
+    test:'about props 123123123',
+  }
   render() {
+    const {test} = this.state;
     return (
       <Router>
         <div>
@@ -27,7 +31,7 @@ class App extends Component {
         </div>
         <Switch>
           <Route path="/about">
-            <About />
+            <About data={test}/>
           </Route>
           <Route path="/news">
             <News />

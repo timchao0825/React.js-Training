@@ -41,8 +41,7 @@ Vue
 - template 裡的變數短  
 - 優點，vue 會自動到 script 裡找變數，簡短快速  
 - 缺點，光看程式碼不確定目標在哪  
-- 要學 template、scrip 的規則  
-- 
+- 要學 template、script 的規則  
 - 改變資料的思維：直接改變變數的值  
 - 一條龍的 library，vue, vue router, vuex 同一個作者寫出來的
 
@@ -50,15 +49,13 @@ Vue
 
 Scope:作用域，只有分function scope 與 global scope而已
 
-bloack:區塊( {} 裡面的都是區塊 )
+block:區塊( {} 裡面的都是區塊 )
 
 var , let , const
 
 - var作用範圍在 scope
 
 - let/const:block
-
-- 
 
 **箭頭函式**
 

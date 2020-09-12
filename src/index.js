@@ -1,5 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
 
 // basic component
 // import List from './basiccomponent/List';
@@ -29,7 +29,7 @@ import ReactDOM from 'react-dom';
 // import Infocard from './infocard/InfocardApp.js'
 // ReactDOM.render(<Infocard/> , document.getElementById('root'));
 
-// react style 
+// react style
 // import Reactstyle from './reactstyle/Reactstyle.js'
 // ReactDOM.render(<Reactstyle/> , document.getElementById('root'));
 
@@ -45,7 +45,7 @@ import ReactDOM from 'react-dom';
 // import App from './filetree/App.js'
 // ReactDOM.render(<App /> , document.getElementById('root'));
 
-// form 
+// form
 // import AppSelect from './form/AppSelect.js';
 // import AppRadio from './form/AppRadio.js';
 // import AppCheckbox from './form/AppCheckbox.js'
@@ -55,9 +55,8 @@ import ReactDOM from 'react-dom';
 // import AppChatRoom from './form/AppChatRoom.js';
 // ReactDOM.render(<AppChatRoom /> , document.getElementById('root'));
 
-// lifecycle 
+// lifecycle
 // reference website:http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
-
 
 // scroll class
 // import App from './scrollclass/App.js';
@@ -75,7 +74,6 @@ import ReactDOM from 'react-dom';
 // Context
 // import App from './context/App.js';
 // ReactDOM.render(<App /> , document.getElementById('root'));
-
 
 // Application Practice
 
@@ -99,7 +97,6 @@ import ReactDOM from 'react-dom';
 // import App from './cookie-clicker/App';
 // ReactDOM.render(<App /> , document.getElementById('root'));
 
-
 // React Hooks
 // >useState
 // import UseState from './reacthooks/UseState.js';
@@ -113,8 +110,10 @@ import ReactDOM from 'react-dom';
 // import App from './reacthooks/useContext/App';
 // ReactDOM.render(<App /> , document.getElementById('root'));
 
-
-
 // React Rounter test
-import App from './react-router/App';
-ReactDOM.render(<App /> , document.getElementById('root'));
+// import App from "./react-router/App";
+// ReactDOM.render(<App />, document.getElementById("root"));
+
+// React Comment list
+import App from "./comment-list/CommentApp";
+ReactDOM.render(<App />, document.getElementById("root"));

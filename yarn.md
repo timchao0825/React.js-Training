@@ -48,7 +48,7 @@ yarn add -D react
 
 #### npm
 
-npm remove --sace react
+npm remove --save react
 
 #### yarn
 

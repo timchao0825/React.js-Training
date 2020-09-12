@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.comment-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-wrap: wrap;
+
+  .comment-box {
+    border: 1px solid black;
+    padding: 20px;
+
+    .comment-input {
+      padding: 20px;
+
+      .comment-field {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+
+        .comment-field-name {
+          min-width: 100px;
+        }
+
+        .comment-field-input input {
+          width: 100%;
+        }
+      }
+
+      .comment-field-button {
+        border: 1px solid black;
+        width: 100%;
+        padding: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  h1 {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    margin: 0;
+    margin-bottom: 5px;
+  }
+}
